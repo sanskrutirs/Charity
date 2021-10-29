@@ -8,7 +8,7 @@
         $sql = mysqli_query($conn,"INSERT INTO charity (name,email,message) VALUES ('$name','$email','$message')") ;
 
         if ($sql) {
-            header('location: Charity.php');
+            header('location: index.php');
         } else {
             echo "Something was wrong";
         }
